@@ -11,3 +11,7 @@
 #jumbotron {
   background-color: #1abc9c;
 }
+
+#jumbotron img {
+  width: 250px;
+}
