@@ -20,35 +20,58 @@
     <title>Document</title>
   </head>
   <body>
-    <header id="header">
-      <div
-        class="container h-100 d-flex justify-content-between align-items-center"
-      >
-        <div class="box text-light">START BOOTSTRAP</div>
-        <div class="box">
-          <i class="text-muted d-md-none fa-solid fa-bars fa-xl"></i>
-        </div>
-        <div class="text-light box d-none d-md-flex">
-          <div class="box me-2">link</div>
-          <div class="box me-2">link</div>
-          <div class="box me-2">link</div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand text-light" href="#">START BOOTSTRAP</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#"
+                >PORTFOLIO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">CONTACT</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
+    </nav>
 
     <main>
       <!-- JUMBOTRON -->
 
       <section id="jumbotron" class="py-4">
-        <div
-          class="container d-flex flex-column justify-content-center align-items-center"
-        >
-          <img class="mb-3" src="./img/avatar.svg" alt="" />
+        <div class="text-light container text-center">
+          <div><img class="mb-3" src="./img/avatar.svg" alt="" /></div>
+
           <div class="box mb-3">
             <h1>START BOOTSTRAP</h1>
           </div>
-          <div class="box mb-3">Separator</div>
-          <div class="box">Mansion</div>
+          <div
+            class="box d-flex justify-content-center align-items-center mb-3"
+          >
+            <div class="separator-bar bg-light rounded"></div>
+            <div><i class="mx-1 fa-solid fa-star"></i></div>
+            <div class="separator-bar bg-light rounded"></div>
+          </div>
+          <div class="box h5 text-uppercase">
+            graphic artist - web designer - illustrator
+          </div>
         </div>
       </section>
 
@@ -57,7 +80,13 @@
       <section id="portfolio" class="py-4">
         <div class="container">
           <h2 class="text-center mb-3">PORTFOLIO</h2>
-          <div class="text-center box mb-3">Separator</div>
+          <div
+            class="box d-flex justify-content-center align-items-center mb-3"
+          >
+            <div class="separator-bar bg-dark rounded"></div>
+            <div><i class="mx-1 fa-solid fa-star text-dark"></i></div>
+            <div class="separator-bar bg-dark rounded"></div>
+          </div>
           <div class="row">
             <div class="col-12 col-md-6 col-lg-4 mb-4">
               <div class="box">
@@ -98,15 +127,31 @@
       <section id="about" class="py-4">
         <div class="text-center text-light container">
           <h2 class="mb-3">ABOUT</h2>
-          <div class="box mb-3">Separator</div>
           <div
-            class="box w-75 m-auto text-start d-md-flex justify-content-center mb-3"
+            class="box d-flex justify-content-center align-items-center mb-3"
           >
-            <p class="box">Text</p>
-            <p class="box mb-3">Text</p>
+            <div class="separator-bar bg-light rounded"></div>
+            <div><i class="mx-1 fa-solid fa-star"></i></div>
+            <div class="separator-bar bg-light rounded"></div>
           </div>
-          <button class="box mb-3">
-            <i class="fa-solid fa-download"></i>Download
+          <div
+            class="box w-75 m-auto text-start d-md-flex justify-content-center align-items-center mb-3"
+          >
+            <p class="box px-2">
+              Freelancer is a free bootstrap theme created by Start Bootstrap.
+              The download includes the complete source files including HTML,
+              CSS, and JavaScript as well as optional LESS stylesheets for easy
+              customization.
+            </p>
+            <p class="box mb-3">
+              Whether you're a student looking to showcase your work, a
+              professional looking to attract clients, or graphic artist looking
+              to share your projects, this template is the perfect starting
+              point!
+            </p>
+          </div>
+          <button type="button" class="box mb-3 btn btn-outline-light">
+            <i class="fa-solid fa-download me-2"></i>Download
           </button>
         </div>
       </section>
@@ -116,18 +161,64 @@
       <section id="contact" class="py-4">
         <div class="text-center container">
           <h2 class="mb-3">CONTACT ME</h2>
-          <div class="box mb-3">Separator</div>
-          <div class="box text-start w-75 m-auto">
-            <div>Name</div>
-            <hr />
-            <div>Email Address</div>
-            <hr />
-            <div>Phone Number</div>
-            <hr />
-            <div class="pb-5">Message</div>
-            <hr />
-            <button class="box p-2">Send</button>
+          <div
+            class="box d-flex justify-content-center align-items-center mb-3"
+          >
+            <div class="separator-bar bg-dark rounded"></div>
+            <div><i class="mx-1 fa-solid fa-star text-dark"></i></div>
+            <div class="separator-bar bg-dark rounded"></div>
           </div>
+
+          <form
+            action="http://learning.tizianonicolai.com/request-catcher/"
+            method="post"
+            class="box text-start w-75 m-auto"
+          >
+            <div>
+              <input
+                class="border border-0 border-bottom lh-lg mb-2"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="border border-0 border-bottom lh-lg mb-2"
+                placeholder="Email Address"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                id="phone-number"
+                name="phone-number"
+                class="border border-0 border-bottom lh-lg mb-2"
+                placeholder="Phone Number"
+              />
+            </div>
+            <div>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                cols="50"
+                class="border border-0 border-bottom lh-lg"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <div>
+              <input
+                class="submit border border-0 rounded p-2 text-light mt-3"
+                type="submit"
+                value="Send"
+              />
+            </div>
+          </form>
         </div>
       </section>
     </main>
@@ -146,16 +237,16 @@
           <div class="box mb-3 md-me-4 w-50">
             <h4>AROUND THE WEB</h4>
             <div class="d-flex justify-content-center">
-              <div class="icons me-2">
+              <div class="icons border border-1 rounded-circle me-2">
                 <i class="lh-lg fa-brands fa-facebook-f"></i>
               </div>
-              <div class="icons me-2">
+              <div class="icons border border-1 rounded-circle me-2">
                 <i class="lh-lg fa-brands fa-google-plus-g"></i>
               </div>
-              <div class="icons me-2">
+              <div class="icons border border-1 rounded-circle me-2">
                 <i class="lh-lg fa-brands fa-twitter"></i>
               </div>
-              <div class="icons">
+              <div class="icons border border-1 rounded-circle">
                 <i class="lh-lg fa-brands fa-linkedin-in"></i>
               </div>
             </div>
@@ -163,7 +254,10 @@
 
           <div class="box mb-3 w-50">
             <h4>ABOUT FREELANCER</h4>
-            <p>TEXT</p>
+            <p>
+              Freelance is a free to use, open source Bootstrap theme created by
+              <span class="text-success">Start Bootstrap</span>
+            </p>
           </div>
         </div>
       </section>
@@ -171,5 +265,10 @@
         <small class="box">Copyright © Your Website 2019 </small>
       </section>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
